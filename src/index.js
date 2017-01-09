@@ -18,7 +18,7 @@ class App extends Component {
       videos : [],
       selectedVideo: null
     };
-    this.videoSearch("supid stuf");
+    this.videoSearch("kexp");
   }
 
   videoSearch(term){
@@ -31,11 +31,12 @@ class App extends Component {
   }
 
   render() {
-    const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 600)
+    const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 400)
 
 
     return(
       <div>
+        <h1 className='title' >Youtube Reseacher</h1>
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo}/>
         <VideosList
