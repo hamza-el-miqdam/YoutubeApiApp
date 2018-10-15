@@ -1,0 +1,11 @@
+{
+  "toto": "titi",
+  "tata": 12345,
+  "tutu": true,
+  "array": [1,"23",123],
+  "baz": {
+    "toto": "titi",
+    "tata": 12345,
+    "tutu": true
+  }
+}
